@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   Play, Pause, RotateCcw, Plus, Trash2, Check, Zap,
   Volume2, VolumeX, Maximize2, Minimize2, Coffee, Brain,
-  Moon, Sparkles, Loader2, Lightbulb, ChevronRight, ChevronDown
+  Moon, Sparkles, Loader2, Lightbulb, ChevronRight,
 } from 'lucide-react';
 
 // --- API Configuration ---
@@ -407,8 +407,8 @@ export default function App() {
                   <div key={task.id} className="flex flex-col gap-2">
                     <div
                       className={`group flex items-center gap-3 p-4 rounded-xl border transition-all duration-300 ${task.completed
-                          ? 'bg-slate-900/30 border-slate-900 text-slate-600'
-                          : 'bg-slate-800/40 border-slate-700/50 text-slate-200 hover:border-emerald-500/30'
+                        ? 'bg-slate-900/30 border-slate-900 text-slate-600'
+                        : 'bg-slate-800/40 border-slate-700/50 text-slate-200 hover:border-emerald-500/30'
                         }`}
                     >
                       <button
